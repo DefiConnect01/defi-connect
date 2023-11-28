@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  scroll-behavior: smooth;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+:root{
+  --colorBlack: #000000;
+--colorBlue:#184EE6;
+--fagbg:-- #EBEDF3;
+
+}
+:focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+::placeholder{
+  color: white;
+}
+a{
+  text-decoration: none !important;
+  cursor: pointer;
+  /* background-color: #e0e0e0; */
+  transition: background-color 0.3s ease;
+}
+a:hover{
+  background-color: var(--fagbg);
+}
+.template{
+  margin: 150px 0;
+}
+.colorBlack{
+  color: var(--colorBlack);
+}
+.colorBlue{
+  color: var(--colorBlue);
+}
+.bg{
+  background: linear-gradient(180deg, rgba(4, 55, 207, 0.29) 0%, rgba(255, 255, 255, 0) 63.02%);
+}
+.fagBg{
+  background:#EBEDF3;
+}
+.logo{
+  width: 80px;
+  height:80px;
+}
+.fs-head{
+  font-family: Poppins;
+  font-size: 28px;
+}
+.fs-subhead{
+  font-family: Poppins;
+  font-size: 24px;
+}
+.fs-title{
+  font-family: Poppins;
+  font-size: 20px;
+}
+.fs-subtitle{
+  font-family: Poppins;
+  font-size: 18px;
+}
+.fs-body{
+  font-family: Poppins;
+  font-size: 16px;
+}
+.fs-subbody{
+  font-family: Poppins;
+  font-size: 14px;
+}
+/* ! stats */
+.stats{
+  width: 50px;
+  height: 50px;
+}
+/* ! heto */
+.hero{
+  width: 100%;
+  height: 300px;
+}
+/* ! defi connect */
+.whyDefi{
+  background: linear-gradient(180deg, #5BFFF4 0%, rgba(4, 57, 207, 0) 100%);
+  color: red;
+  padding: 20px  ;
+}
+.whyDefiImage{
+  height: 300px;
+  width: 300px;
+}
+.fs-why{
+  font-family: Poppins;
+  font-size: 20px;
+}
+.item-first{
+  width: 40%;
+}
+.item-second-last{
+  width: 30%;
+}
+.item-icon{
+  font-size:20px;
+}
+
+.custom-form {
+  max-width: 300px; /* Set a maximum width for the form */
+  margin: auto; /* Center the form on the page */
+}
+/* ! */
+input:focus{
+  outline: none;
+}
+.getTokowCard{
+  height: 200px;
+  background: #EBEDF3;
+
+}
+.getTokowCard p{
+  height: 110px;
+}
+.getTokowCardHead{
+  height: 50px;
+}
+/* .roadCard {
+  background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
+  margin-top: 20px;
+  text-align: center; 
+  position: relative; 
+} */
+/* 
+.roadCardTop {
+  background: #062370;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 500px; 
+  padding: 10px;
+  text-align: center;
+} */
+/* ! road */
+.roadCard{
+  background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
+  height: 270px;
+}
+.roadCardTop{
+  background: #062370;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 500px; 
+  text-align: center;
+  font-size: 14px;
+}
+.mb10{
+  margin-bottom: 80px;
+}
+/* !contact */
+.contactContainer {
+  background: linear-gradient(180deg, #0439CF 0%, #07ECF0 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.contactContent {
+  background-color: #f9f9f9;
+   /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  
+  
+}
+.form-control{
+  background: #9A9DA4;
+
+}
+/* ! partner */
+.partnerImg{
+  width: 250px;
+}
+.partner{
+  height:200px;
+  width: 100%;
+}
+.black-input{
+  background: #9A9DA4;
+  color: #fff;
+  width: 100%;
+  display: block;
+  padding: 10px;
+  outline: none;
+  border: none;
+
+}
+.black-input::placeholder {
+  color: white; /* Set the desired placeholder color */
+}
+/*.accordion-button:;
+  :after ;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+{
+	background-image: url("path_to_image");
+}
+.accordion-button:not(.collapsed)::after {
+	background-image: url("path_to_image");
+} */
+/* .accordion-button::after {
+ background-color: #184EE6;
+}
+.accordion-button:not(.collapsed)::after {
+  background-color: red;
+} */
+/* .accordion-button::after{
+  background: url("./component/asset/images/hero.svg") no-repeat center right;
+} */
+/* .accordion-button:not(.collapsed)::after {
+  background: url("./component/asset/images/stats.svg") no-repeat center right; 
+} */
+/* .accordion {
+  --bs-accordion-btn-icon: url("./component/asset/images/hero.svg");
+  --bs-accordion-btn-active-icon: url("./component/asset/images/why.svg");
+} */
+/* .accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus-circle' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash-circle' viewBox='0 0 16 16'><path d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
+} */
+/* .accordion .card-header:after {
+  font-family: 'FontAwesome';
+  content: '\f068';
+  float: right;
+}
+.accordion .card-header.collapsed:after {
+  content: '\f068';
+} */
+/*! Custom style */
+
+.accordion-button {
+  border: 2px solid red;
+}
+.accordion-item {
+  border-bottom: 2px solid  #9A9DA4 !important;
+  border-top: 2px solid  #9A9DA4 !important;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='blue' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e")!important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='blue' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e")!important;
+}
+/* .accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+} */
+/* $accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>"); */
+
+
+/* !faq */
+.fagQuest{
+  width: 50%;
+}
+/* ! team */
+.teamImg{
+  width: 150px;
+  height:150px;
+}
+.teamCard{
+  height: 450px !important;
+  width: 100% !important;
+}
+/* ! Solution */
+.solutionImg{
+  width: 100%;
+  height: 100%;
+}
+@media (max-width:1200px) {
+  .roadCardTop{
+    width: 400px;
+    font-size: 12px;
+}
+.roadCard{
+  background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
+  height: 300px;
+}
+/* !patrtner */
+.partnerImg{
+  width:200px;
+}
+/* ! team */
+.teamCard{
+  height: 470px !important;
+  width: 100% !important;
+}
+}
+@media (max-width:992px) {
+  .whyDefiImage{
+    height: 200px;
+    width: 200px;
+  }
+  .getTokowCard{
+  height: 220px;
+  background: #EBEDF3;
+
+}
+.getTokowCard p{
+  height: 100px;
+}
+.getTokowCardHead{
+  height: 50px;
+}
+.roadCardTop{
+  width: 370px;
+  font-size: 12px;
+}
+/* !road */
+.roadCard{
+  background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
+  height: 420px;
+}
+/* !why */
+.fs-why{
+  font-family: Poppins;
+  font-size: 16px;
+}
+/* !partner */
+.partnerImg{
+  width:150px;
+}
+
+/* !faq */
+.fagQuest{
+  width: 80%;
+}
+/* ! team */
+.teamCard{
+  height: 550px !important;
+  width: 100% !important;
+}
+}
+@media (max-width:768px) {
+  /* !contact */
+  .contactContent {padding-inline: 5%;}
+  .whyDefiImage{
+    height: 200px;
+    width: 200px;
+  }
+  .getTokowCard{
+  height: 160px;
+  background: #EBEDF3;
+
+}
+.getTokowCard p{
+  height: 50px;
+}
+.getTokowCardHead{
+  height: 50px;
+}
+/* ! road */
+.roadCardTop{
+  width: 450px;
+  font-size: 12px;
+}
+.roadCard{
+  background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
+  height: 280px;
+}
+
+/* ! wht */
+.fs-why{
+  font-family: Poppins;
+  font-size: 16px;
+}
+/* ! team */
+.teamCard{
+  height: 470px !important;
+  width: 100% !important;
+}
+/* ! Solution */
+.solutionImg{
+  width: 100%;
+  height: 250px;
+}
+}
+@media (max-width:576px) {
+  .hero{
+    width: 100%;
+    height: 300px;
+  }
+  /* ! */
+  .whyDefiImage{
+    height: 200px;
+    width: 200px;
+  }
+  .getTokowCard{
+    height: 170px;
+    background: #EBEDF3;
+  
+  }
+  .getTokowCard p{
+    height: 80px;
+  }
+  .getTokowCardHead{
+    height: 50px;
+  }
+  .fs-head{
+    font-family: Poppins;
+    font-size: 24px;
+  }
+  .fs-subhead{
+    font-family: Poppins;
+    font-size: 20px;
+  }
+  .fs-title{
+    font-family: Poppins;
+    font-size: 18px;
+  }
+  .fs-subtitle{
+    font-family: Poppins;
+    font-size: 16px;
+  }
+  
+  .fs-body{
+    font-family: Poppins;
+    font-size: 14px;
+  }
+  .fs-subbody{
+    font-family: Poppins;
+    font-size: 12px;
+  }
+  
+  .roadCardTop{
+    background: #062370;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%); 
+    text-align: center;
+    width: 350px;
+    font-size: 12px;
+  }
+  .roadCard{
+    background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
+    height: 350px;
+  }
+  /* ! contact */
+  .contactContainer {
+    height: 70vh;
+    padding: 20px;
+  }
+  /* !why */
+  .fs-why{
+    font-family: Poppins;
+    font-size: 12px;
+  }
+  /* !partner */
+  .partnerImg{
+    width:100%;
+  }
+  /* ! team */
+.teamCard{
+  height: 400px !important;
+  width: 100% !important;
+}
+}
+@media (max-width:480px) {
+  /* !road */
+  .roadCard{
+    background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
+    height: 400px;
+  }
+  .whyDefiImage{
+    height: 100px;
+    width: 100px;
+  }
+/*   
+  .getTokowCard{
+    height: 240px;
+    background: #EBEDF3;
+  
+  } */
+  .getTokowCard p{
+    height: 120px;
+  }
+  .getTokowCardHead{
+    height: 50px;
+  }
+  .fs-head{
+    font-family: Poppins;
+    font-size: 24px;
+  }
+  .fs-subhead{
+    font-family: Poppins;
+    font-size: 22px;
+  }
+  .fs-title{
+    font-family: Poppins;
+    font-size: 20px;
+  }
+  .fs-subtitle{
+    font-family: Poppins;
+    font-size: 16px;
+  }
+  .fs-body{
+    font-family: Poppins;
+    font-size: 14px;
+  }
+  .fs-subbody{
+    font-family: Poppins;
+    font-size: 12px;
+  }
+  /* ! why */
+  .fs-why{
+    font-family: Poppins;
+    font-size: 10px;
+  }
+  /* ! team */
+.teamCard{
+  height: 450px !important;
+  width: 100% !important;
+}
+}
+
+
+
