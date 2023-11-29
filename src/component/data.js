@@ -416,8 +416,6 @@ const geToKnowData1 = [
         part in decisions that shape the future
         of Defi connect Credit.`
     },
-]
-const geToKnowData2= [
     {
         title:'Staking',
         img:require('./asset/images/govern.svg').default,
@@ -434,9 +432,9 @@ const geToKnowData2= [
         title:'Launchpad',
         img:require('./asset/images/launchpad.svg').default,
         para:`Participate in any of the IDO to stand chance to be the first person to buy the sales.`
-    },
-    
+    }
 ]
+
 
 const PartnerContent= {
     subtitle:`Move Faster with Defi Connect Credit  Partners`,
@@ -565,4 +563,4 @@ const footerContent = [
 ];
 
          
-export  {footData,NavData,templatetHead,geToKnowData1, geToKnowData2,whyDefiContent,SliderData,FagData,InterestData,footerContent,solutionDataCard,PartnerContent,RoadDataMap,BorrowHeaderContent}
+export  {footData,NavData,templatetHead,geToKnowData1,whyDefiContent,SliderData,FagData,InterestData,footerContent,solutionDataCard,PartnerContent,RoadDataMap,BorrowHeaderContent}
