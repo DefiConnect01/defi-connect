@@ -25,7 +25,7 @@ const GetToKnowUs = () => {
                   </div>
                     </Col>
                 ))
-            },
+            }
            </Row>  
            
             

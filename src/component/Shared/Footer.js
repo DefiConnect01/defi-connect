@@ -4,6 +4,7 @@ import { footData} from '../data';
 
 import FooterAds from './FooterAds';
 import FooterEmail from './FooterEmail';
+import Logo from '../asset/images/deficonnect.png'
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
      <Stack>
         <Row className='justify-justify-content-around justify-content-md-between'>
           <Col xm={12} sm={6} md={4} className='align-self-center'>
-            <img src={require('./../asset/images/deficonnect _lo.svg').default} className='' style={{height:'50px',width:'50px'}} alt=''/>
+            <img src={Logo} className='' style={{height:'50px',width:'50px'}} alt=''/>
           </Col>
           <Col xm={12} sm={6} md={4}>
            <FooterEmail/>
