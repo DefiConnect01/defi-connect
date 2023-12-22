@@ -7,15 +7,22 @@ import { BsArrowLeftRight } from 'react-icons/bs';
 import { FaGreaterThan } from 'react-icons/fa';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { CoinPrice } from '../../../service/CoinPrice';
+import { useQuery } from '@tanstack/react-query';
 
 const BorrowInput = () => {
+  const { data: coin, error, isLoading } = useQuery({
+    queryKey: ['coin'],
+    queryFn: CoinPrice,
+  });
   const [amount, setAmount] = useState('');
   const [amountPair, setAmountPair] = useState('');
   const [selectedCoin, setSelectedCoin] = useState('');
   const [selectedCoinPair, setSelectedCoinPair] = useState('');
   const [conversionRate, setConversionRate] = useState(null);
   // const [order, setOrder] = useState([]);
-  
+  // console.log(coin?.data)
+  // console.log(coin?.data.coins)
 
 
   const BorrowInpuData = templatetHead[6];
@@ -41,40 +48,17 @@ const BorrowInput = () => {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    console.log(`You selected ${amount} ${selectedCoin}`);
-    console.log(`You selected ${amountPair} ${selectedCoinPair}`);
-    
-    let currency1API= "bitcoin,ethereum";
-    let other='ethereum'
-    let indexDate="01-01-2020";
-    let coins=selectedCoin + ','+selectedCoinPair
-    console.log(coins)
-    let string = `https://api.coingecko.com/api/v3/simple/price?ids=${coins}&vs_currencies=usd`;
-  
-   await fetch(string)
-   
-    .then(resp => resp.json())
-    .then(data =>{
-     
-      console.log(data)
-      console.log(data[selectedCoinPair].usd)
-      console.log(data[selectedCoin].usd)
-      
-      setAmount(data[selectedCoin].usd)
-      setAmountPair(data[selectedCoinPair].usd)
-    })
-    // .then(data => console.log(data.market_data.current_price.usd,data))
+
    
   };
-
+ console.log(selectedCoin + ' coming from')
 
   return (
-    <Template title={title} para={para}  className='container-fluid md-container'>
+    <Template title={title} para={para} className='container-fluid md-container'>
       <section className='d-flex flex-column align-items-center border border-3 border-light-subtle px-2 py-3 rounded-4'>
         <section className='d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-3'>
-       
-        
           <CoinPairSelector
+            coinSelect={coin}
             amount={amount}
             handleCoinChange={handleCoinChange}
             handleAmountChange={handleAmountChange}
@@ -82,6 +66,7 @@ const BorrowInput = () => {
           />
           <BsArrowLeftRight style={{ color: 'teal' }} className='fs-3' />
           <CoinPairSelector
+            coinSelect={coin}
             amount={amountPair}
             handleCoinChange={handleCoinChangePair}
             handleAmountChange={handleAmountChangePair}
@@ -89,17 +74,10 @@ const BorrowInput = () => {
           />
         </section>
         <Button className='fw-bold w-50 w-md-25 text-center' onClick={handleSubmit}>
-         <Link to='/borrow' className='text-white'>
-            BORROW NOW <FaGreaterThan/>
-         </Link> 
+          <Link to='/borrow' className='text-white'>
+            BORROW NOW <FaGreaterThan />
+          </Link>
         </Button>
-        <div className="mt-3">
-          {conversionRate && (
-            <div>
-              1 {selectedCoin} = {conversionRate} {selectedCoinPair}
-            </div>
-          )}
-        </div>
       </section>
     </Template>
   );
@@ -107,7 +85,29 @@ const BorrowInput = () => {
 
 export default BorrowInput;
 
+// console.log(`You selected ${amount} ${selectedCoin}`);
+// console.log(`You selected ${amountPair} ${selectedCoinPair}`);
 
+//   let currency1API= "bitcoin,ethereum";
+//   let other='ethereum'
+//   let indexDate="01-01-2020";
+//   let coins=selectedCoin + ','+selectedCoinPair
+//   console.log(coins)
+//   let string = `https://api.coingecko.com/api/v3/simple/price?ids=${coins}&vs_currencies=usd`;
+
+//  await fetch(string)
+
+//   .then(resp => resp.json())
+//   .then(data =>{
+ 
+//     console.log(data)
+//     console.log(data[selectedCoinPair].usd)
+//     console.log(data[selectedCoin].usd)
+  
+//     setAmount(data[selectedCoin].usd)
+//     setAmountPair(data[selectedCoinPair].usd)
+//   })
+// .then(data => console.log(data.market_data.current_price.usd,data))
 
 // const res =await fetch( `https://api.coingecko.com/api/v3/simple/price?ids=${selectedCoin.toLowerCase()}&vs_currencies=${selectedCoinPair.toLowerCase()}`)
     // const res =await fetch(`https://api.coingecko.com/api/v3/coins/list/bitcoin/usd`)
