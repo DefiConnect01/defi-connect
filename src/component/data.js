@@ -260,7 +260,7 @@ const templatetHead =[
                                 {
                                     id:1,
                                     teamImg:sendTeamA,
-                                    teamName:'Fedrico Tula',
+                                    teamName:'Federico Tula',
                                     teamTitle:'CEO',
                                     teamDescription:`Federico has over a decade of experience in financial technology, having previously led successful blockchain projects. He brings a strategic vision for merging traditional finance with decentralized technologies.`
                                 },
