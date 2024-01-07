@@ -29,7 +29,7 @@ const NavData=[
     {
         id:0,
         name:'Whitepaper',
-        path:'#whitepaper',
+        path:'https://defi-connect-credit.gitbook.io/whitepaper-defi-connect-credit',
         file:file
     },
     {

@@ -13,15 +13,15 @@ function NavBar() {
 
   const changeColor = async (e, id) => {
     setNavColor(id.id);
-    if (id.name === 'Whitepaper') {
-      let userConfirmation = window.confirm('You are about to download the Whitepaper. Do you want to proceed?');
-      if (userConfirmation) {
-        setDownloadConfirmed(true);
-      } else {
-        e.preventDefault();
-        setDownloadConfirmed(false);
-      }
-    }
+    // if (id.name === 'Whitepaper') {
+    //   let userConfirmation = window.confirm('You are about to download the Whitepaper. Do you want to proceed?');
+    //   if (userConfirmation) {
+    //     setDownloadConfirmed(true);
+    //   } else {
+    //     e.preventDefault();
+    //     setDownloadConfirmed(false);
+    //   }
+    // }
   };
   
 
@@ -45,8 +45,10 @@ function NavBar() {
             <ToastContainer />
             {NavData.map((nav, index) => (
               <a
-                href={nav.name === 'Whitepaper' ? whitePaper: nav.path}
-                download={nav.name === 'Whitepaper' ? true : false}
+                href={nav.path}
+                target={nav.path.startsWith('https')?'_blank':''}
+                rel='noreferrer'
+                // download={nav.name === 'Whitepaper' ? true : false}
                 key={nav.name + index}
                 onClick={(e) => changeColor(e, nav)}
                 style={{ color: navColor === index ? 'red' : 'blue' }}
