@@ -25,6 +25,7 @@ const CoinPairSelector = ({
     placeholder="Enter amount"
     value={amount}
     onChange={handleAmountChange}
+    readOnly
     required
     style={{marginRight: '5px', border: '1px solid #ccc', borderRadius: '5px', padding: '5px'}}
   />

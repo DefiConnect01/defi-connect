@@ -73,11 +73,9 @@ const BorrowInput = () => {
             selectedCoin={selectedCoinPair}
           />
         </section>
-        <Button className='fw-bold w-50 w-md-25 text-center' onClick={handleSubmit}>
-          <Link to='/borrow' className='text-white'>
-            BORROW NOW <FaGreaterThan />
-          </Link>
-        </Button>
+        <Button className='fw-bold borrow-Btn-container text-center' >
+          <a href='https://deficonnect-credit-lendapp.onrender.com/' target='_blank' rel='noreferrer' className='text-white'>BORROW NOW <FaGreaterThan /></a>
+</Button>
       </section>
     </Template>
   );

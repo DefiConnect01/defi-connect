@@ -144,7 +144,7 @@ input:focus{
 /* ! road */
 .roadCard{
   background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
-  height: 270px;
+  height: 510px;
 }
 .roadCardTop{
   background: #062370;
@@ -292,7 +292,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 }
 .roadCard{
   background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
-  height: 300px;
+  height: 550px;
 }
 /* !patrtner */
 .partnerImg{
@@ -327,7 +327,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 /* !road */
 .roadCard{
   background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
-  height: 420px;
+  height: 600px;
 }
 /* !why */
 .fs-why{
@@ -374,7 +374,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 }
 .roadCard{
   background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
-  height: 280px;
+  height: 550px;
 }
 
 /* ! wht */
@@ -452,7 +452,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   }
   .roadCard{
     background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
-    height: 350px;
+    height: 550px;
   }
   /* ! contact */
   .contactContainer {
@@ -478,7 +478,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   /* !road */
   .roadCard{
     background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
-    height: 400px;
+    height: 600px;
   }
   .whyDefiImage{
     height: 100px;
@@ -531,6 +531,26 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   width: 100% !important;
 }
 }
+@media (max-width:480px) {
+  .roadCard{
+    background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
+    height: 700px;
+  }
+}
+.borrow-Btn-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+@media (max-width: 768px) {
+  .borrow-Btn-container {
+    width: 100%;
+    padding: 1rem;
+  }
+}
 
 
