@@ -19,19 +19,19 @@ const CoinPairSelector = ({
   const conversionRate = selectedCoinData ? selectedCoinData.price : null;
 
   return (
-    <div className="coin-pair-selector w-75 d-flex flex-column flex-md-row align-items-center gap-3 p-3 border rounded">
+    <div className="coin-pair-selector w-100 d-flex flex-column flex-md-row align-items-center gap-3 p-3 border rounded">
       {isLoading ? (
         <div>Loading...</div>
       ) : (
         <>
-          <div className="selected-coin fs-5">{selectedCoin}</div>
-          <div className="price-info">
+          <div className="selected-coin fs-5 mb-2 w-50">{selectedCoin}</div>
+          <div className="">
             {conversionRate && (
-              <div className="price fs-6">Price: {millify(conversionRate)}</div>
+              <div className="price fs-6 mb-2 text-nowrap">Price: {millify(conversionRate)}</div>
             )}
           </div>
           <select
-            className="form-select fs-6"
+            className="form-select fs-6 mb-2 w-50"
             value={selectedCoin}
             onChange={handleCoinChange}
             required
@@ -49,6 +49,7 @@ const CoinPairSelector = ({
 };
 
 export default CoinPairSelector;
+
 
 
 

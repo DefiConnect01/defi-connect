@@ -28,7 +28,7 @@ const BorrowInput = () => {
 
   return (
     <Template title={title} para={para} className='container-fluid md-container'>
-      <section className='d-flex flex-column align-items-center border border-5 border-light-subtle px-2 py-3 rounded-4'>
+      <section className='mx-auto border border-5 border-light-subtle px-2 py-3 rounded-4'>
         <section className='d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-3'>
           <CoinPairSelector
             coinSelect={coin}
