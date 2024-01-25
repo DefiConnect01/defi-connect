@@ -1,5 +1,5 @@
-import { useQuery } from '@tanstack/react-query';
 import React from 'react';
+import { useQuery } from '@tanstack/react-query';
 import { CoinPrice } from '../../service/CoinPrice';
 import millify from 'millify';
 
@@ -19,50 +19,51 @@ const CoinPairSelector = ({
   const conversionRate = selectedCoinData ? selectedCoinData.price : null;
 
   return (
-    <section className='d-flex flex-column gap-3 gap-md-0 flex-sm-row flex-1 '>
-    <input
-    type='number'
-    placeholder="Enter amount"
-    value={amount}
-    onChange={handleAmountChange}
-    readOnly
-    required
-    style={{marginRight: '5px', border: '1px solid #ccc', borderRadius: '5px', padding: '5px'}}
-  />
-      <div
-        style={{
-          marginRight: '5px',
-          border: '1px solid #ccc',
-          borderRadius: '5px',
-          padding: '5px',
-        }}
-      >
-        {selectedCoin}
-        {conversionRate && <div>Price: {millify(conversionRate)}</div>}
-      </div>
-      <select
-        value={selectedCoin}
-        onChange={handleCoinChange}
-        required
-        style={{
-          border: '1px solid #ccc',
-          borderRadius: '5px',
-          padding: '5px',
-        }}
-      >
-        {coinSelect?.map((data, index) => (
-          <option value={data.name} key={index}>
-            {data.symbol}
-          </option>
-        ))}
-      </select>
-    </section>
+    <div className="coin-pair-selector w-75 d-flex flex-column flex-md-row align-items-center gap-3 p-3 border rounded">
+      {isLoading ? (
+        <div>Loading...</div>
+      ) : (
+        <>
+          <div className="selected-coin fs-5">{selectedCoin}</div>
+          <div className="price-info">
+            {conversionRate && (
+              <div className="price fs-6">Price: {millify(conversionRate)}</div>
+            )}
+          </div>
+          <select
+            className="form-select fs-6"
+            value={selectedCoin}
+            onChange={handleCoinChange}
+            required
+          >
+            {coinSelect?.map((data, index) => (
+              <option value={data.name} key={index}>
+                {data.symbol}
+              </option>
+            ))}
+          </select>
+        </>
+      )}
+    </div>
   );
 };
 
 export default CoinPairSelector;
 
 
+
+
+ //   <input
+  //   type='number'
+  //   placeholder="Enter amount"
+  //   value={selectedCoin}
+  //   // value={amount}
+  //   onChange={handleAmountChange}
+  //   // readOnly
+  //   required
+  //   style={{marginRight: '5px', border: '1px solid #ccc', borderRadius: '5px', padding: '5px'}}
+  // />
+// {selectedCoin}
 
 // <input
 // type='number'

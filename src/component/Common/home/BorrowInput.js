@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Template from '../../Shared/Template';
 import { templatetHead } from '../../data';
-import { Button } from 'react-bootstrap';
+import { Button, Spinner } from 'react-bootstrap'; // Import Spinner from react-bootstrap
 import CoinPairSelector from '../../Shared/CoinPairSelector';
-import { BsArrowLeftRight } from 'react-icons/bs';
 import { FaGreaterThan } from 'react-icons/fa';
-import axios from 'axios';
-import { Link } from 'react-router-dom';
 import { CoinPrice } from '../../../service/CoinPrice';
 import { useQuery } from '@tanstack/react-query';
 
@@ -16,46 +13,22 @@ const BorrowInput = () => {
     queryFn: CoinPrice,
   });
   const [amount, setAmount] = useState('');
-  const [amountPair, setAmountPair] = useState('');
   const [selectedCoin, setSelectedCoin] = useState('');
-  const [selectedCoinPair, setSelectedCoinPair] = useState('');
-  const [conversionRate, setConversionRate] = useState(null);
-  // const [order, setOrder] = useState([]);
-  // console.log(coin?.data)
-  // console.log(coin?.data.coins)
-
 
   const BorrowInpuData = templatetHead[6];
-  
   const { para, title } = BorrowInpuData.BorrowInputData;
-  
-     
-  
 
   const handleAmountChange = (e) => {
     setAmount(e.target.value);
-  };
-  const handleAmountChangePair = (e) => {
-    setAmountPair(e.target.value);
   };
 
   const handleCoinChange = (e) => {
     setSelectedCoin(e.target.value);
   };
-  const handleCoinChangePair = (e) => {
-    setSelectedCoinPair(e.target.value);
-  };
-
-  const handleSubmit = async(e) => {
-    e.preventDefault();
-
-   
-  };
- console.log(selectedCoin + ' coming from')
 
   return (
     <Template title={title} para={para} className='container-fluid md-container'>
-      <section className='d-flex flex-column align-items-center border border-3 border-light-subtle px-2 py-3 rounded-4'>
+      <section className='d-flex flex-column align-items-center border border-5 border-light-subtle px-2 py-3 rounded-4'>
         <section className='d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-3'>
           <CoinPairSelector
             coinSelect={coin}
@@ -64,24 +37,35 @@ const BorrowInput = () => {
             handleAmountChange={handleAmountChange}
             selectedCoin={selectedCoin}
           />
-          <BsArrowLeftRight style={{ color: 'teal' }} className='fs-3' />
-          <CoinPairSelector
-            coinSelect={coin}
-            amount={amountPair}
-            handleCoinChange={handleCoinChangePair}
-            handleAmountChange={handleAmountChangePair}
-            selectedCoin={selectedCoinPair}
-          />
         </section>
-        <Button className='fw-bold borrow-Btn-container text-center' >
-          <a href='https://deficonnect-credit-lendapp.onrender.com/' target='_blank' rel='noreferrer' className='text-white'>BORROW NOW <FaGreaterThan /></a>
+        <Button className='fw-bold borrow-Btn-container'>
+  <a
+    href='https://deficonnect-credit-lendapp.onrender.com/'
+    target='_blank'
+    rel='noreferrer'
+    className='text-white d-flex align-items-center'
+  >
+    <p className='text-center'>BORROW NOW</p>
+    <FaGreaterThan />
+  </a>
 </Button>
       </section>
     </Template>
   );
-}
+};
 
 export default BorrowInput;
+
+
+
+// <BsArrowLeftRight style={{ color: 'teal' }} className='fs-3' />
+//           <CoinPairSelector
+//             coinSelect={coin}
+//             amount={amountPair}
+//             handleCoinChange={handleCoinChangePair}
+//             handleAmountChange={handleAmountChangePair}
+//             selectedCoin={selectedCoinPair}
+//           />
 
 // console.log(`You selected ${amount} ${selectedCoin}`);
 // console.log(`You selected ${amountPair} ${selectedCoinPair}`);

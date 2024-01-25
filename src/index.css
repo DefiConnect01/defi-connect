@@ -544,13 +544,33 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center the content horizontally */
 }
 
 @media (max-width: 768px) {
   .borrow-Btn-container {
     width: 100%;
     padding: 1rem;
+    text-align: center;
+    margin-inline: auto; 
   }
 }
+.borrow-Btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.borrow-Btn-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.borrow-Btn-container a p {
+  margin: 0;
+}
+
 
 
