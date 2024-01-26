@@ -6,22 +6,22 @@ const footData = [
   {
     social: "Github",
     path: "",
-    icon: <FaGithub className="text-black fs-4"/>,
+    icon: <FaGithub className=" fs-4"/>,
   },
   {
     social: "Twiter",
     path: "https://twitter.com/DeFi_credit?t=DmrsbNRMLVVFsFM6PopMpA&s=09",
-    icon: <FaTwitter className="text-black fs-4"/>,
+    icon: <FaTwitter className=" fs-4"/>,
   },
   {
     social: "Telegram",
     path: "https://t.me/+699uMw5F20I3YTY0",
-    icon: <FaTelegram className="text-black fs-4"/>,
+    icon: <FaTelegram className=" fs-4"/>,
   },
   {
     social: "Discord",
     path: "",
-    icon: <FaDiscord className="text-black fs-4"/>,
+    icon: <FaDiscord className=" fs-4"/>,
   },
 ];
 

@@ -128,6 +128,13 @@ input:focus{
 .getTokowCardHead{
   height: 50px;
 }
+.social-icons a {
+  color: #000;
+  transition: color 0.3s;
+}
+.social-icons a:hover {
+  color: white; 
+}
 /* .roadCard {
   background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
   margin-top: 20px;

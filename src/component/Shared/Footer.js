@@ -18,7 +18,7 @@ const Footer = () => {
            <FooterEmail/>
           </Col>
           <Col xm={12} sm={6} md={4}>
-          <div className="d-flex justify-content-center justify-content-md-end gap-4">
+          <div className="d-flex justify-content-center justify-content-md-end gap-4 social-icons">
                        {footData.map((data, index) => (
                          <a href={data.path} key={index} target={data.path ? '_blank':''} rel='noreferrer' >
                            {data.icon}
