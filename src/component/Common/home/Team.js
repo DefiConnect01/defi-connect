@@ -8,7 +8,7 @@ const Team = () => {
     const partner = templatetHead[9]
     const {title,teamDetails} = partner.TeamData
     return (
-        <Template title={title} className='fagBg px-0 px-md-3 py-4'>
+        <Template title={title} className='px-0 px-md-3 py-4'>
         <Row className='px-1 px-md-3 container-fluid'>
           {
             teamDetails.map((data,index)=>(

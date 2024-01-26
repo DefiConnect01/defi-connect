@@ -8,7 +8,7 @@ import Logo from '../asset/images/deficonnect.png'
 
 const Footer = () => {
   return (
-    <footer className="bg-light py-3 mt-5">
+    <footer className="py-3 mt-5">
      <Stack>
         <Row className='justify-justify-content-around justify-content-md-between'>
           <Col xm={12} sm={6} md={4} className='align-self-center'>
@@ -20,7 +20,7 @@ const Footer = () => {
           <Col xm={12} sm={6} md={4}>
           <div className="d-flex justify-content-center justify-content-md-end gap-4">
                        {footData.map((data, index) => (
-                         <a href={data.path} key={index} target={data.path ? '_blank':''} rel='noreferrer'>
+                         <a href={data.path} key={index} target={data.path ? '_blank':''} rel='noreferrer' >
                            {data.icon}
                          </a>
                        ))}

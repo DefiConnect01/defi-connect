@@ -19,6 +19,9 @@
 ::placeholder{
   color: white;
 }
+body{
+  background-image: linear-gradient(90deg,#fff,#0284c7); 
+}
 a{
   text-decoration: none !important;
   cursor: pointer;
@@ -38,7 +41,8 @@ a:hover{
   color: var(--colorBlue);
 }
 .bg{
-  background: linear-gradient(180deg, rgba(4, 55, 207, 0.29) 0%, rgba(255, 255, 255, 0) 63.02%);
+  /* background: linear-gradient(180deg, rgba(4, 55, 207, 0.29) 0%, rgba(255, 255, 255, 0) 63.02%); */
+  background-image: linear-gradient(90deg,#fff,#0284c7); 
 }
 .fagBg{
   background:#EBEDF3;
@@ -143,7 +147,8 @@ input:focus{
 } */
 /* ! road */
 .roadCard{
-  background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
+  /* background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%); */
+  background-color: rgba(0,0,0,.6);
   height: 510px;
 }
 .roadCardTop{
@@ -161,7 +166,8 @@ input:focus{
 }
 /* !contact */
 .contactContainer {
-  background: linear-gradient(180deg, #0439CF 0%, #07ECF0 100%);
+  /* background: linear-gradient(180deg, #0439CF 0%, #07ECF0 100%); */
+  background-image: linear-gradient(90deg,#fff,#0284c7); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -291,7 +297,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
     font-size: 12px;
 }
 .roadCard{
-  background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
+
   height: 550px;
 }
 /* !patrtner */
@@ -326,7 +332,7 @@ $accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w
 }
 /* !road */
 .roadCard{
-  background: linear-gradient(180.16deg, #184EE6 0.14%, #07EFF1 166.41%);
+
   height: 600px;
 }
 /* !why */

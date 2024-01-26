@@ -18,11 +18,17 @@ const Hero = () => {
             <p className='fs-subhead fw-light'>Borrow without selling your crypto with rates 
             as low as 0% and no extra fees. Just top up 
             and your credit line is immediately available.</p>
-            <Button>
-            <Link to='/borrow'>
-            <span className='fw-bold text-white'>BORROW NOW <FaGreaterThan/></span>
-            </Link>
-            </Button>
+            <Button className='fw-bold w-10'>
+            <a
+              href='https://deficonnect-credit-lendapp.onrender.com/'
+              target='_blank'
+              rel='noreferrer'
+              className='text-white d-flex align-items-center'
+            >
+              BORROW NOW
+              <FaGreaterThan />
+            </a>
+          </Button>
         </Slide>    
     </Col>
     <Col sm={12} md={5} className='mt-3 mt-md-0'>

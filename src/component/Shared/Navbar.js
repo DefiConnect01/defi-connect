@@ -52,7 +52,7 @@ function NavBar() {
                 key={nav.name + index}
                 onClick={(e) => changeColor(e, nav)}
                 style={{ color: navColor === index ? 'red' : 'blue' }}
-                className='px-auto mx-auto mx-md-0 py-2 py-md-0 px-md-2'>
+                className='px-1 mx-auto mx-md-0 py-2 py-md-0 px-md-2'>
                 {nav.name}
               </a>
             ))}
