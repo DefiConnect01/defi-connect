@@ -10,7 +10,7 @@ const footData = [
   },
   {
     social: "Twiter",
-    path: "https://twitter.com/DeFi_credit?t=DmrsbNRMLVVFsFM6PopMpA&s=09",
+    path: "https://twitter.com/DeFi_Credit",
     icon: <FaTwitter className=" fs-4"/>,
   },
   {
@@ -20,7 +20,7 @@ const footData = [
   },
   {
     social: "Discord",
-    path: "",
+    path: "https://discord.com/invite/bcp9CfPK",
     icon: <FaDiscord className=" fs-4"/>,
   },
 ];
