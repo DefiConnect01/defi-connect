@@ -4,6 +4,7 @@ import TeamC from './team3.png'
 import sendTeamA from './send.png'
 import sendTeamB from './send1.png'
 import sendTeamC from './teamSenderLast.png'
+import defi from './defiiii.png'
 
 
-export {TeamA,TeamB,TeamC,sendTeamA,sendTeamB,sendTeamC}
+export {TeamA,TeamB,TeamC,sendTeamA,sendTeamB,sendTeamC,defi}

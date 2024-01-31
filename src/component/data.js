@@ -1,7 +1,7 @@
 import { FaGithub, FaTelegram, FaDiscord, FaTwitter } from "react-icons/fa";
 import { AiFillCheckCircle, AiFillCloseCircle } from "react-icons/ai";
 import file from "./asset/docs/Whitepaper_DeFi_Connect.docx";
-import { sendTeamA, sendTeamB, sendTeamC } from "./asset/images/Images";
+import { sendTeamA, sendTeamB, sendTeamC,defi } from "./asset/images/Images";
 const footData = [
   {
     social: "Github",
@@ -15,7 +15,7 @@ const footData = [
   },
   {
     social: "Telegram",
-    path: "https://t.me/+699uMw5F20I3YTY0",
+    path: "https://t.me/CommunityDCC",
     icon: <FaTelegram className=" fs-4"/>,
   },
   {
@@ -124,7 +124,7 @@ const templatetHead = [
       para: `Join our Loyalty Program and get funds at no cost! Just enable our
                             Low-Interest Borrowing feature to automatically keep your LTV ratio
                             below 20% and enjoy our best rates.`,
-      img: require("./asset/images/borrowImg.svg").default,
+      img: defi,
     },
   },
   {
