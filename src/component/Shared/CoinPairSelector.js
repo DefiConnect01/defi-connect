@@ -4,13 +4,12 @@ import { CoinPrice } from '../../service/CoinPrice';
 import millify from 'millify';
 
 const CoinPairSelector = ({
-  amount,
+ 
   selectedCoin,
-  handleAmountChange,
   handleCoinChange,
   coinSelect,
 }) => {
-  const { data: coin, error, isLoading } = useQuery({
+  const { data: coin, isLoading } = useQuery({
     queryKey: ['coin'],
     queryFn: CoinPrice,
   });

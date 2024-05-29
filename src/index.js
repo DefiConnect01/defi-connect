@@ -11,7 +11,9 @@ import "slick-carousel/slick/slick-theme.css";
 import Loading from './component/Shared/Loading';
 import { QueryClient,QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
- const AppLazy = lazy(()=>import('./App'))
+import { BanditContextProvider, Campaign } from "@bandit-network/react";
+ 
+const AppLazy = lazy(()=>import('./App'))
  const MarketPageLazy = lazy(()=>import('./component/pages/MarketPage'))
  const LoanPageLazy = lazy(()=>import('./component/pages/LoanPage.js'))
  const SavingPageLazy = lazy(()=>import('./component/pages/SavingPage.js'))
@@ -48,7 +50,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   <QueryClientProvider client={queryClent}>
-      <RouterProvider router={router}/>
+  <BanditContextProvider
+  apiKey="ac2ad2eec4d44bb6820e463bf231a53e"
+  cluster="mainnet"
+>
+<RouterProvider router={router}/>
+</BanditContextProvider>
   </QueryClientProvider>
   </React.StrictMode>
 );

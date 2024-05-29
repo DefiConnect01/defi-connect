@@ -1,10 +1,7 @@
 import React from 'react'
 import Template from './../../Shared/Template'
 import { templatetHead } from '../../data'
-import { Button, Col, Row } from 'react-bootstrap'
-import {PartnerContent} from './../../data'
-import Img from './../../asset/images/business.jpg'
-import Img1 from './../../asset/images/partner.jpg'
+import {  Col, Row } from 'react-bootstrap'
 
 const Partner = () => {
     const partner = templatetHead[8]

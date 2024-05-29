@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import Template from '../../Shared/Template';
 import { templatetHead } from '../../data';
-import { Button, Spinner } from 'react-bootstrap'; // Import Spinner from react-bootstrap
+import { Button } from 'react-bootstrap'; 
 import CoinPairSelector from '../../Shared/CoinPairSelector';
 import { FaGreaterThan } from 'react-icons/fa';
 import { CoinPrice } from '../../../service/CoinPrice';
 import { useQuery } from '@tanstack/react-query';
 
 const BorrowInput = () => {
-  const { data: coin, error, isLoading } = useQuery({
+  const { data: coin } = useQuery({
     queryKey: ['coin'],
     queryFn: CoinPrice,
   });

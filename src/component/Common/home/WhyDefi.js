@@ -2,12 +2,12 @@ import React from 'react';
 import Template from './../../Shared/Template';
 import { Card, Col, Row, Stack } from 'react-bootstrap';
 import { templatetHead, whyDefiContent } from '../../data';
-import { Fade, Slide } from 'react-awesome-reveal';
+import {  Slide } from 'react-awesome-reveal';
 
 
 const WhyDefi = () => {
   const whyDefiData = templatetHead[1];
-  const { whyDefiData:{title, para, img, img1, img2 }} = whyDefiData;
+  const { whyDefiData:{title, para,  img1, img2 }} = whyDefiData;
 
   return (
     <Template title={title} para={para} className='text-primary container-fluid' >
