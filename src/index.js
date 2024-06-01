@@ -27,11 +27,13 @@ const AppLazy = lazy(() => import("./App"));
 const MarketPageLazy = lazy(() => import("./component/pages/MarketPage"));
 const LoanPageLazy = lazy(() => import("./component/pages/LoanPage.js"));
 const SavingPageLazy = lazy(() => import("./component/pages/SavingPage.js"));
+let secret='0a6bbd10ce0e5ef20f62596407593e45';
+let client='bj5cIcvhztnA4gf0-yUMTr-Wo2MSHmky1NJpNccmH1IBPZRTA8NiIqU3Za_lX2et081J1-mvyPVqm_fkg1XzGA'
 
 const queryClent = new QueryClient();
 // export const config = getDefaultConfig({
 //   appName: "Defi Conect",
-//   projectId: "YOUR_PROJECT_ID",
+//   projectId: "43ec0661be2bbc87d6ac8f1edfb9bcce",
 //   chains: [mainnet, polygon, optimism, arbitrum, base],
 //   ssr: true, // If your dApp uses server side rendering (SSR)
 // });
